@@ -26,12 +26,14 @@ body {
   max-width: 100%;
   position: relative;
   margin: auto;
+  
 }
 
 .mySlides {
   display: none;
   justify-content: center;
-  align-items: center
+  align-items: center;
+
 }
 
 .mySlides .content {
