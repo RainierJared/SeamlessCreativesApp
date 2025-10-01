@@ -2,9 +2,13 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import banner1 from '../src/assets/banner-1.jpg'
+import banner2 from '../src/assets/banner-2.jpg'
+import banner3 from '../src/assets/banner-3.jpg'
+import banner4 from '../src/assets/banner-4.jpg'
 
 let slideIndex = 0;
-//showSlides();
+showSlides();
 
 function showSlides() {
   let i;
@@ -15,12 +19,11 @@ function showSlides() {
   slideIndex++;
   if(slideIndex > slides.length) {slideIndex=1}
   slides[slideIndex-1].style.display="block";
-  setTimeout(showSlides,2000) //  Changes every 2 seconds
+  setTimeout(showSlides,10000) //  Changes every 2 seconds
 }
 
 function App() {
   const [count, setCount] = useState(0)
-
   return (
     <>
       <body>
@@ -28,12 +31,33 @@ function App() {
             <div>=</div>
             <div>Inquire</div>
           </navbar>
-        <div className='banner'>
-          <div className='content'>
-            Seamless Creatives
+        <div className="slideshow">
+            <div className='mySlides fade'>
+                <img src={banner1} alt="Photo of wedding 1" style={{width:'100%'}}/>
+                <div className='content'>
+                  Seamless Creatives
+                </div>
           </div>
-          <div className="overlay"></div>
+            <div className='mySlides fade'>
+                <img src={banner2} alt="Photo of wedding 1" style={{width:'100%'}}/>
+                <div className='content'>
+                  Seamless Creatives
+                </div>
+          </div>
+              <div className='mySlides fade'>
+                <img src={banner3} alt="Photo of wedding 1" style={{width:'100%'}}/>
+                <div className='content'>
+                  Seamless Creatives
+                </div>
+          </div>
+              <div className='mySlides fade'>
+                <img src={banner4} alt="Photo of wedding 1" style={{width:'100%'}}/>
+                <div className='content'>
+                  Seamless Creatives
+                </div>
+          </div>
         </div>
+        
       </body>
     </>
   )
