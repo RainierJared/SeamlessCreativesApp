@@ -35,7 +35,7 @@ function App() {
             <div className='mySlides fade'>
                 <img src={banner1} alt="Photo of wedding 1" style={{width:'100%'}}/>
                 <div className='content'>
-                  Seamless Creatives
+                  Seamless Creative
                 </div>
           </div>
             <div className='mySlides fade'>
