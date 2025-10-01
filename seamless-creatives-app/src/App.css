@@ -23,24 +23,30 @@ body {
 }
 
 .slideshow {
-  max-width: 100%;
+  width: 100%;
   position: relative;
   margin: auto;
 }
 
 .mySlides {
   display: none;
+  margin-bottom: 4%;
 }
 
 .mySlides .content {
-  font-size: 5rem;
+  font-size: 8rem;
   color: white;
+  position: absolute;
+  text-align: center;
+  justify-items: center;
+  width: 100%;
+  bottom: 50%;
   z-index: 1;
 }
 
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
 
 @keyframes fade {
@@ -53,4 +59,38 @@ body {
   height: 100%;
   background-color: rgba(0,0,0,0.5);
   position: absolute;
+}
+
+.mainText {
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  align-items: center;
+  padding: 5px 5px;
+  margin-bottom: 4%;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.mainText h1 {
+  font-size: 4rem;
+}
+
+.mainText p {
+  font-size: 1.5rem;
+}
+
+.about {
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  border-bottom: 1px solid black;
+}
+
+.about img {
+  width: 30%;
+  height: auto;
 }
