@@ -30,7 +30,7 @@ body {
 
 .mySlides {
   display: none;
-  margin-bottom: 4%;
+  margin-bottom: 2%;
 }
 
 .mySlides .content {
@@ -41,7 +41,7 @@ body {
   justify-items: center;
   width: 100%;
   bottom: 50%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .fade {
@@ -59,6 +59,7 @@ body {
   height: 100%;
   background-color: rgba(0,0,0,0.5);
   position: absolute;
+  z-index: 1;
 }
 
 .mainText {
@@ -67,7 +68,6 @@ body {
   height: 80%;
   align-items: center;
   padding: 5px 5px;
-  margin-bottom: 4%;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
 }
@@ -77,13 +77,14 @@ body {
 }
 
 .mainText p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .about {
   margin: auto;
   width: 80%;
   height: 80%;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 6px 10px;
@@ -91,6 +92,22 @@ body {
 }
 
 .about img {
-  width: 30%;
+  width: 200%;
   height: auto;
+  margin-right: 5%;
+}
+
+.about h1 {
+  font-size: 3rem;
+}
+
+.about p {
+  font-size: 1.25rem;
+}
+
+.gallery {
+  width: 80%;
+  margin: auto;
+  height: 80%;
+  align-items: center;
 }
