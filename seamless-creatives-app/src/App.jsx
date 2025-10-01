@@ -1,29 +1,15 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import showSlides from './Slides.jsx'
+
 import './App.css'
 import banner1 from '../src/assets/banner-1.jpg'
 import banner2 from '../src/assets/banner-2.jpg'
 import banner3 from '../src/assets/banner-3.jpg'
 import banner4 from '../src/assets/banner-4.jpg'
 
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for(i = 0; i < slides.length; i++ ){
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if(slideIndex > slides.length) {slideIndex=1}
-  slides[slideIndex-1].style.display="block";
-  setTimeout(showSlides,10000) //  Changes every 2 seconds
-}
-
 function App() {
   const [count, setCount] = useState(0)
+
   return (
     <>
       <body>
@@ -62,5 +48,5 @@ function App() {
     </>
   )
 }
-
 export default App
+showSlides()
