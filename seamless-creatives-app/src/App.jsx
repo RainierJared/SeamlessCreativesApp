@@ -73,7 +73,7 @@ function App() {
 
         <div className='about'>
           <img src={closeUp} alt="Photo of Ranier Manalo"/>
-          <div>
+          <div className='textbox'>
             <h1>About Us</h1>
             <p> Hi! I’m Rainier Manalo, a professional photographer and videographer based in Melbourne, Australia. I lead the amazing team of Seamless Creatives. We specialize in wedding, elopement, and engagement photography. We do well in capturing the candor of the moment.</p> 
             <p>I always loved going to weddings. There was something about the joy and love in the air that made me feel warm and fuzzy inside. As I got older, I started to think about what it would be like to capture those moments for other couples. And then, one day, I fell in love with wedding photography. It was an amazing feeling to know that I could help capture some of the happiest moments in someone’s life!</p> 
