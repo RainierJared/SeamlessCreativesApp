@@ -9,7 +9,7 @@ body {
 }
 
 .navbar {
-  height: 5vh;
+  height: 7vh;
   background-color: rgb(223, 223, 223);
   display: flex;
   justify-content: space-between;
@@ -23,6 +23,7 @@ body {
 }
 
 .slideshow {
+  height: 100%;
   width: 100%;
   position: relative;
   margin: auto;
@@ -30,11 +31,12 @@ body {
 
 .mySlides {
   display: none;
+  position: relative;
   margin-bottom: 2%;
 }
 
 .mySlides .content {
-  font-size: 8rem;
+  font-size: 10rem;
   color: white;
   position: absolute;
   text-align: center;
@@ -59,7 +61,8 @@ body {
   height: 100%;
   background-color: rgba(0,0,0,0.5);
   position: absolute;
-  z-index: 1;
+  bottom: 0.2%;
+  z-index: 1
 }
 
 .mainText {
@@ -111,3 +114,80 @@ body {
   height: 80%;
   align-items: center;
 }
+
+@media screen and (max-width: 1362px) {
+  .mySlides .content {
+    font-size: 8rem;
+  }
+
+  .mainText h1 {
+    font-size: 2rem;
+  }
+
+  .mainText p {
+    font-size: 1rem;
+  }
+
+  .about h1 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .mySlides .content {
+    font-size: 6rem;
+  }
+  .mainText h1 {
+    font-size: 2rem;
+  }
+
+  .mainText p {
+    font-size: 1rem;
+  }
+
+  .about h1 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .mySlides .content {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .mySlides .content {
+    font-size: 3rem;
+  }
+  .mainText h1 {
+    font-size: 1.5rem;
+  }
+
+  .mainText p {
+    font-size: 1rem;
+  }
+
+  .about h1 {
+    font-size: 1.5rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .mySlides .content {
+    font-size: 2rem;
+  }
+}
+

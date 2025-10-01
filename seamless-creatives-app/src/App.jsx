@@ -41,27 +41,30 @@ function App() {
                 <div className='content'>
                   Seamless Creatives
                 </div>
+                <div className='overlay'></div>
           </div>
             <div className='mySlides fade'>
                 <img src={banner2} alt="Photo of wedding 1" style={{width:'100%'}}/>
                 <div className='content'>
                   Seamless Creatives
                 </div>
+                <div className='overlay'></div>
           </div>
               <div className='mySlides fade'>
                 <img src={banner3} alt="Photo of wedding 1" style={{width:'100%'}}/>
                 <div className='content'>
                   Seamless Creatives
                 </div>
+                <div className='overlay'></div>
           </div>
               <div className='mySlides fade'>
                 <img src={banner4} alt="Photo of wedding 1" style={{width:'100%'}}/>
                 <div className='content'>
                   Seamless Creatives
                 </div>
+                <div className='overlay'></div>
           </div>
         </div>
-
         <div className='mainText'>
           <h1>Who are we?</h1>
           <p>Seamless Creatives aims to give you excellent wedding photography in New Zealand and Australia. We strive to create an amazing experience cherished by you and your guests. As a Wedding Photographer, our approach is very personalized. We step back and let you be you. We’re here to capture moments in every aspect of your big day, from the first look to the last dance.</p>
